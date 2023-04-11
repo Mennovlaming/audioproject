@@ -1,7 +1,10 @@
 .rotate-on-scroll {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  width: 40em;
+  height: 40em;
+  /* background-color: red; */
+  background-image: url(../images/plaatje.png);
+  background-position: center;
+  background-size: cover;
   position: fixed;
   top: 50%;
   left: 50%;
