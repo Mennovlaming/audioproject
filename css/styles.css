@@ -1,13 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+
 .rotate-on-scroll {
-  width: 40em;
-  height: 40em;
+  width: 90vh;
+  height: 90vh;
+  border-radius: 100%;
   /* background-color: red; */
-  background-image: url(../images/plaatje.png);
-  background-position: center;
+  background-image: url(../images/plaatjeversiebeat.png);
   background-size: cover;
   position: fixed;
-  top: 50%;
+  top: 100vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 10;
+  filter: drop-shadow(0 0 0.75rem white);
+  /* transform: translate(-50%, -50%); */
   animation: none; /* disable the animation by default */
+  /* filter: drop-shadow(10px 10px 8px #ffffff78); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  background-color: transparent;
+  border-radius: 100%;
+  border: none;
+  position: absolute; 
+}
+
+.circle1 {
+  width: 80vh;
+  height: 80vh;
+  cursor: pointer;
+  border: 2px solid red;
+  z-index: 10;
+}
+.space1 {
+  width: 78vh;
+  height: 78vh;
+  background-color: transparent;
+  border-radius: 100%;
+  cursor:auto;
+  z-index: 12;
+}
+.circle2 {
+  border: 2px solid blue;
+  width: 60vh;
+  height: 60vh;
+  z-index: 14;
+  cursor: pointer;
+}
+
+.space2 {
+  width: 58vh;
+  height: 58vh;
+  border-radius: 100%;
+  background-color: transparent;
+  z-index: 16;
+  position: absolute;
+  cursor: auto;
+}
+.circle3 {
+  border: 2px solid yellow;
+  width: 35vh;
+  height: 35vh;
+  z-index: 18;
+  cursor: pointer;
+}
+.space3 {
+  cursor: auto;
+  z-index: 20;
+  width: 33vh;
+  height: 33vh;
+  border-radius: 100%;
+  background-color: transparent;
+  position: absolute;
+}
+
+@media screen and (min-width: 600px) {
+  .rotate-on-scroll {
+    width: 150vh;
+    height: 150vh;
+  }
+  .circle1 {
+    width: 130vh;
+    height: 130vh;
+  }
+  .space1{
+    width: 128vh;
+    height: 128vh;
+  }
+  .circle2 {
+    width: 100vh;
+    height: 100vh;
+  }
+  .space2{
+    width: 98vh;
+    height: 98vh;
+  }
+  .circle3 {
+    width: 70vh;
+    height: 70vh;
+  }
+  .space3{
+    width: 68vh;
+    height: 68vh;
+  }
+}
+
+section {
+  background-color: #BEBEBE;
+  width: 15em;
+  height: 5em;
+  
+  display: flex;
+  justify-content: center;
+}
+
+section button {
+  padding: 1.5em;
+  margin: 1.5em;
 }
