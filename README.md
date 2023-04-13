@@ -4,7 +4,7 @@
 
 Door: Max, Menno en Eva
 
-![homepage](https://github.com/EvaZ7/browsertech/blob/c8ce6d65de47cc539d967d74f3e03d5af446fc71/readmeimages/albumshomepage.png)
+![homepage](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/homepage.png)
 
 ## Ideeën
 
@@ -21,13 +21,13 @@ We hebben een iteratie op ons idee gemaakt en dat is dat de gebruiker de groeven
 
 We hebben verschillende iteraties gemaakt op ons idee omdat er steeds een functionaliteit bijkwam, dus daarom ook op ons ontwerp. Dit zijn de vijf verschillende interfaces.
 
-![Figma design](https://github.com/EvaZ7/browsertech/blob/c8ce6d65de47cc539d967d74f3e03d5af446fc71/readmeimages/albumshomepage.png)
+![Figma design](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/figmadesign.png)
 
 Verder hebben wij alle illustraties zelf ontworpen in Adobe-illustrator en Photoshop met alle typografie.
 
-![Plaat](https://github.com/EvaZ7/browsertech/blob/c8ce6d65de47cc539d967d74f3e03d5af446fc71/readmeimages/albumshomepage.png)
-![Arm](https://github.com/EvaZ7/browsertech/blob/c8ce6d65de47cc539d967d74f3e03d5af446fc71/readmeimages/albumshomepage.png)
-![Knop](https://github.com/EvaZ7/browsertech/blob/c8ce6d65de47cc539d967d74f3e03d5af446fc71/readmeimages/albumshomepage.png)
+![Plaat](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/plaatje.png)
+![Arm](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/arm.png)
+![Knop](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/knop.png)
 
 ## Testverslag
 
