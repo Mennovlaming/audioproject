@@ -11,7 +11,7 @@ Door: Max, Menno en Eva
 - Soundpad met verschillende voorgeprogrammeerde sounds, misschien ook met drag and drop
 - Platenspeler: een plaatje draait half in beeld steeds rond op dat plaatje staan weer interactieve elementen, het mooiste is als we het plaatje kunnen laten draaien op scroll zoals [deze website.](https://interactive.galaxy.com/#media)
 - Elementen en letters laten animeren met kleur en grootte zoals [hier.](https://en.manayerbamate.com/)
-- Drag and droppen van muziek op de plaat [met draggable](https://shopify.github.io/draggable/) [of sortable.](http://sortablejs.github.io/Sortable/) voorbeeld [in vscode.](https://dlo.mijnhva.nl/content/enforced/437105-FDMCI-2000FRDE17-DMCI-CMD-2223/FvD%2022-23%20-%20Blok%203%20-%20%20Oefeningen%20lijstjes%20en%20libs.pdf)
+- Drag and droppen van muziek op de plaat [met draggable](https://shopify.github.io/draggable/) [of sortable.](http://sortablejs.github.io/Sortable/) Voorbeeld [in vscode.](https://dlo.mijnhva.nl/content/enforced/437105-FDMCI-2000FRDE17-DMCI-CMD-2223/FvD%2022-23%20-%20Blok%203%20-%20%20Oefeningen%20lijstjes%20en%20libs.pdf)
 
 Het uiteindelijke idee is om een platenspeler te maken waarop je albums kan slepen. Elk album stelt een nieuw geluid voor. Zo kan je dus meerdere beats tegelijk afspelen, deze kan je ook versneller of weer uit zetten.
 
@@ -25,17 +25,18 @@ We hebben verschillende iteraties gemaakt op ons idee omdat er steeds een functi
 
 Verder hebben wij alle illustraties zelf ontworpen in Adobe-illustrator en Photoshop met alle typografie.
 
-![Plaat](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/plaatje.png)
-![Arm](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/arm.png)
-![Knop](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/knop.png)
+![Plaat](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/plaatje.png)![Arm](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/arm.png)![Knop](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/knop.png)
 
 ## Testverslag
+
+**Testvragen**
 
 - Is het duidelijk hoe je een beat kan toevoegen?
 - Is het duidelijk hoe de beats kan versnellen?
 
+
+~~Laat de plaat sneller draaien.~~
 - Voeg een beat toe.
-~~ - Laat de plaat sneller draaien.~~
 - Laat de beat sneller gaan.
 
 ### Resultaat (observatie)
