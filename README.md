@@ -1,6 +1,6 @@
 # Sounds of the city
 
-[Create yor own beat](https://mennovlaming.github.io/audioproject/)
+[Create your own beat](https://mennovlaming.github.io/audioproject/)
 
 Door: Max, Menno en Eva
 
@@ -25,7 +25,7 @@ We hebben verschillende iteraties gemaakt op ons idee omdat er steeds een functi
 
 Verder hebben wij alle illustraties zelf ontworpen in Adobe-illustrator en Photoshop met alle typografie.
 
-![Plaat](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/plaatje.png)![Arm](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/arm.png)![Knop](https://github.com/Mennovlaming/audioproject/blob/1124f8dc4a6e1868a8abee6a484ba49581f42273/images/knop.png)
+![Illustraties](https://github.com/Mennovlaming/audioproject/blob/212b72cbc818e63666d4019ee5f76052fcda8d70/images/illustraties.png)
 
 ## Testverslag
 
@@ -42,7 +42,9 @@ Verder hebben wij alle illustraties zelf ontworpen in Adobe-illustrator en Photo
 ### Resultaat (observatie)
 
 [Testpersoon 1](https://youtu.be/i2V-0czFC4M)
+
 [Testpersoon 2](https://youtu.be/jGD-zzpJ0jU)
+
 [Testpersoon 3](https://youtu.be/J4DDeMd69kc)
 
 ### Conclusie
