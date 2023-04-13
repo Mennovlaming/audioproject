@@ -1,7 +1,6 @@
 var rotateElement = document.querySelector('.rotate');
 var currentRotation = 0;
 var animationSpeed = 1;
-const buttons = document.querySelectorAll(".sound");
 
 setInterval(function() {
   // add a small rotation angle to the current rotation angle
@@ -117,30 +116,84 @@ const synths = [
   }).toDestination(),
 ];
 
-
-let intervalIds = [null, null, null, null, null, null];
+// Initialize variables
+let bpm = 50;
+let interval;
+let timeoutIds = [];
 let isPlayingArray = [false, false, false, false, false, false];
 
-function playNoteWithDurationAndInterval(duration, interval, synthIndex) {
+// Get DOM elements
+const bpmButtons = document.querySelectorAll(".changeBPM button");
+const soundButtons = document.querySelectorAll(".sound");
+
+// Function to play a note with duration and interval
+function playNoteWithDurationAndInterval(duration, synthIndex) {
   synths[synthIndex].triggerAttackRelease("C4", duration);
-  intervalIds[synthIndex] = setTimeout(() => {
-    playNoteWithDurationAndInterval(duration, interval, synthIndex);
+  timeoutIds[synthIndex] = setTimeout(() => {
+    playNoteWithDurationAndInterval(duration, synthIndex);
   }, interval);
 }
 
+// Function to toggle sound on/off
 function toggleSound(synthIndex) {
   if (isPlayingArray[synthIndex]) {
-    clearInterval(intervalIds[synthIndex]);
+    clearTimeout(timeoutIds[synthIndex]);
     isPlayingArray[synthIndex] = false;
   } else {
-    playNoteWithDurationAndInterval("8n", 1000, synthIndex);
+    playNoteWithDurationAndInterval("8n", synthIndex);
     isPlayingArray[synthIndex] = true;
   }
-  buttons[synthIndex].classList.toggle("active");
+  soundButtons[synthIndex].classList.toggle("active");
 }
 
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", () => {
+// Add click event listener to sound buttons
+for (let i = 0; i < soundButtons.length; i++) {
+  soundButtons[i].addEventListener("click", () => {
     toggleSound(i);
   });
 }
+
+// Function to update bpm and stop all active sounds
+function updateBPM(newBPM) {
+  // Stop all active sounds
+  for (let i = 0; i < timeoutIds.length; i++) {
+    if (isPlayingArray[i]) {
+      clearTimeout(timeoutIds[i]);
+      isPlayingArray[i] = false;
+      soundButtons[i].classList.remove("active");
+    }
+  }
+
+  // Update bpm and restart beat if necessary
+  clearInterval(interval);
+  bpm = newBPM;
+  interval = 60000 / bpm / 2;
+  for (let i = 0; i < timeoutIds.length; i++) {
+    if (isPlayingArray[i]) {
+      playNoteWithDurationAndInterval("8n", i);
+    }
+  }
+
+  // Remove activeBPM class from all buttons
+  bpmButtons.forEach((button) => {
+    button.classList.remove("activeBPM");
+  });
+
+  // Add activeBPM class to active button
+  bpmButtons.forEach((button) => {
+    if (parseInt(button.innerHTML) === newBPM) {
+      button.classList.add("activeBPM");
+    }
+  });
+}
+
+// Add click event listener to bpm buttons
+for (let i = 0; i < bpmButtons.length; i++) {
+  bpmButtons[i].addEventListener("click", () => {
+    const newBPM = parseInt(bpmButtons[i].innerHTML);
+    updateBPM(newBPM);
+  });
+}
+
+// Set default bpm to 50
+updateBPM(bpm);
