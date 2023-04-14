@@ -45,12 +45,12 @@ body {
   background: transparent;
   cursor: pointer;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 .changeBPM button img{
   
   display: block;
-  width: 80px;
+  width: 200px;
   height: auto;
   filter: drop-shadow(0 0 .75rem #eeebe3);
 }
@@ -384,4 +384,11 @@ main div div:nth-of-type(4) {
     100% {
         transform: translateX(0em) translatey(0em);
     }
+}
+
+.arm img {
+width: 20em;
+position: absolute;
+z-index: 100;
+right: 0;
 }

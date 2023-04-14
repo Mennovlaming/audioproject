@@ -1,6 +1,28 @@
 var rotateElement = document.querySelector('.rotate');
 var currentRotation = 0;
 var animationSpeed = 1;
+ 
+const bpm25 = document.querySelector('#bpm25 img');
+const bpm50 = document.querySelector('#bpm50 img');
+const bpm100 = document.querySelector('#bpm100 img');
+
+bpm25.addEventListener("click", function(){
+  bpm25.src = "../images/knopgroen.png";
+  bpm50.src = "../images/knoppatroon.png";
+  bpm100.src = "../images/knoppatroon.png";
+});
+
+bpm50.addEventListener("click", function(){
+  bpm50.src = "../images/knopgroen.png";
+  bpm100.src = "../images/knoppatroon.png";
+  bpm25.src = "../images/knoppatroon.png"
+});
+
+bpm100.addEventListener("click", function(){
+  bpm100.src = "../images/knopgroen.png";
+  bpm25.src = "../images/knoppatroon.png";
+  bpm50.src = "../images/knoppatroon.png";
+});
 
 setInterval(function() {
   // add a small rotation angle to the current rotation angle
