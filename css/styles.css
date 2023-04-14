@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 :root {
@@ -38,7 +39,8 @@ body {
   transform: rotate(180deg);
 }
 .changeBPM {
-  margin: 2em 0 0 4em;
+  padding: 2em 0 0 4em;
+  overflow: hidden;
 }
 .changeBPM button {
   border: none;
@@ -50,7 +52,7 @@ body {
 .changeBPM button img{
   
   display: block;
-  width: 120px;
+  width: 100px;
   height: auto;
   filter: drop-shadow(0 0 .75rem #eeebe3);
 }
@@ -387,8 +389,8 @@ main div div:nth-of-type(4) {
 }
 
 .arm img {
-width: 20em;
-position: absolute;
+width: 10em;
+position: fixed;
 z-index: 100;
 right: 0;
 }
