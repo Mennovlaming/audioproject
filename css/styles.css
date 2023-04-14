@@ -50,7 +50,7 @@ body {
 .changeBPM button img{
   
   display: block;
-  width: 200px;
+  width: 120px;
   height: auto;
   filter: drop-shadow(0 0 .75rem #eeebe3);
 }
